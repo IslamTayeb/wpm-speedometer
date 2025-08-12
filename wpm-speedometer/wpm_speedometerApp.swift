@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct wpm_speedometerApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        MenuBarExtra("WPM Speedometer", systemImage: "speedometer") {
+            MenuView()
         }
     }
 }
