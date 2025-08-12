@@ -7,10 +7,10 @@
 
 import SwiftUI
 
+// Empty view since we only want the menu bar display
 struct MenuView: View {
     var body: some View {
-        Text("Hello")
-            .padding()
+        EmptyView()
     }
 }
 
