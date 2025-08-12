@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		6456200E2E4B282000E64E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64561FF72E4B281F00E64E54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64561FFE2E4B281F00E64E54;
+			remoteInfo = "wpm-speedometer";
+		};
+		645620182E4B282000E64E54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64561FF72E4B281F00E64E54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64561FFE2E4B281F00E64E54;
+			remoteInfo = "wpm-speedometer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64561FFF2E4B281F00E64E54 /* wpm-speedometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wpm-speedometer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6456200D2E4B282000E64E54 /* wpm-speedometerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wpm-speedometerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		645620172E4B282000E64E54 /* wpm-speedometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wpm-speedometerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		645620012E4B281F00E64E54 /* wpm-speedometer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "wpm-speedometer";
+			sourceTree = "<group>";
+		};
+		645620102E4B282000E64E54 /* wpm-speedometerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "wpm-speedometerTests";
+			sourceTree = "<group>";
+		};
+		6456201A2E4B282000E64E54 /* wpm-speedometerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "wpm-speedometerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64561FFC2E4B281F00E64E54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6456200A2E4B282000E64E54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		645620142E4B282000E64E54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64561FF62E4B281F00E64E54 = {
+			isa = PBXGroup;
+			children = (
+				645620012E4B281F00E64E54 /* wpm-speedometer */,
+				645620102E4B282000E64E54 /* wpm-speedometerTests */,
+				6456201A2E4B282000E64E54 /* wpm-speedometerUITests */,
+				645620002E4B281F00E64E54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		645620002E4B281F00E64E54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64561FFF2E4B281F00E64E54 /* wpm-speedometer.app */,
+				6456200D2E4B282000E64E54 /* wpm-speedometerTests.xctest */,
+				645620172E4B282000E64E54 /* wpm-speedometerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64561FFE2E4B281F00E64E54 /* wpm-speedometer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 645620212E4B282000E64E54 /* Build configuration list for PBXNativeTarget "wpm-speedometer" */;
+			buildPhases = (
+				64561FFB2E4B281F00E64E54 /* Sources */,
+				64561FFC2E4B281F00E64E54 /* Frameworks */,
+				64561FFD2E4B281F00E64E54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				645620012E4B281F00E64E54 /* wpm-speedometer */,
+			);
+			name = "wpm-speedometer";
+			packageProductDependencies = (
+			);
+			productName = "wpm-speedometer";
+			productReference = 64561FFF2E4B281F00E64E54 /* wpm-speedometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6456200C2E4B282000E64E54 /* wpm-speedometerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 645620242E4B282000E64E54 /* Build configuration list for PBXNativeTarget "wpm-speedometerTests" */;
+			buildPhases = (
+				645620092E4B282000E64E54 /* Sources */,
+				6456200A2E4B282000E64E54 /* Frameworks */,
+				6456200B2E4B282000E64E54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6456200F2E4B282000E64E54 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				645620102E4B282000E64E54 /* wpm-speedometerTests */,
+			);
+			name = "wpm-speedometerTests";
+			packageProductDependencies = (
+			);
+			productName = "wpm-speedometerTests";
+			productReference = 6456200D2E4B282000E64E54 /* wpm-speedometerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		645620162E4B282000E64E54 /* wpm-speedometerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 645620272E4B282000E64E54 /* Build configuration list for PBXNativeTarget "wpm-speedometerUITests" */;
+			buildPhases = (
+				645620132E4B282000E64E54 /* Sources */,
+				645620142E4B282000E64E54 /* Frameworks */,
+				645620152E4B282000E64E54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				645620192E4B282000E64E54 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6456201A2E4B282000E64E54 /* wpm-speedometerUITests */,
+			);
+			name = "wpm-speedometerUITests";
+			packageProductDependencies = (
+			);
+			productName = "wpm-speedometerUITests";
+			productReference = 645620172E4B282000E64E54 /* wpm-speedometerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64561FF72E4B281F00E64E54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					64561FFE2E4B281F00E64E54 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					6456200C2E4B282000E64E54 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 64561FFE2E4B281F00E64E54;
+					};
+					645620162E4B282000E64E54 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 64561FFE2E4B281F00E64E54;
+					};
+				};
+			};
+			buildConfigurationList = 64561FFA2E4B281F00E64E54 /* Build configuration list for PBXProject "wpm-speedometer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64561FF62E4B281F00E64E54;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 645620002E4B281F00E64E54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64561FFE2E4B281F00E64E54 /* wpm-speedometer */,
+				6456200C2E4B282000E64E54 /* wpm-speedometerTests */,
+				645620162E4B282000E64E54 /* wpm-speedometerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64561FFD2E4B281F00E64E54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6456200B2E4B282000E64E54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		645620152E4B282000E64E54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64561FFB2E4B281F00E64E54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		645620092E4B282000E64E54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		645620132E4B282000E64E54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6456200F2E4B282000E64E54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64561FFE2E4B281F00E64E54 /* wpm-speedometer */;
+			targetProxy = 6456200E2E4B282000E64E54 /* PBXContainerItemProxy */;
+		};
+		645620192E4B282000E64E54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64561FFE2E4B281F00E64E54 /* wpm-speedometer */;
+			targetProxy = 645620182E4B282000E64E54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6456201F2E4B282000E64E54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = QP5RS325Z4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		645620202E4B282000E64E54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = QP5RS325Z4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		645620222E4B282000E64E54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "wpm-speedometer/wpm_speedometer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QP5RS325Z4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IslamTayeb.wpm-speedometer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		645620232E4B282000E64E54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "wpm-speedometer/wpm_speedometer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QP5RS325Z4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IslamTayeb.wpm-speedometer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		645620252E4B282000E64E54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QP5RS325Z4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IslamTayeb.wpm-speedometerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wpm-speedometer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wpm-speedometer";
+			};
+			name = Debug;
+		};
+		645620262E4B282000E64E54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QP5RS325Z4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IslamTayeb.wpm-speedometerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wpm-speedometer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wpm-speedometer";
+			};
+			name = Release;
+		};
+		645620282E4B282000E64E54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QP5RS325Z4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IslamTayeb.wpm-speedometerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "wpm-speedometer";
+			};
+			name = Debug;
+		};
+		645620292E4B282000E64E54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QP5RS325Z4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "IslamTayeb.wpm-speedometerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "wpm-speedometer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64561FFA2E4B281F00E64E54 /* Build configuration list for PBXProject "wpm-speedometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6456201F2E4B282000E64E54 /* Debug */,
+				645620202E4B282000E64E54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		645620212E4B282000E64E54 /* Build configuration list for PBXNativeTarget "wpm-speedometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645620222E4B282000E64E54 /* Debug */,
+				645620232E4B282000E64E54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		645620242E4B282000E64E54 /* Build configuration list for PBXNativeTarget "wpm-speedometerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645620252E4B282000E64E54 /* Debug */,
+				645620262E4B282000E64E54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		645620272E4B282000E64E54 /* Build configuration list for PBXNativeTarget "wpm-speedometerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				645620282E4B282000E64E54 /* Debug */,
+				645620292E4B282000E64E54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64561FF72E4B281F00E64E54 /* Project object */;
+}
