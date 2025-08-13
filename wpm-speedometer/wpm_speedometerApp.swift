@@ -24,14 +24,8 @@ struct wpm_speedometerApp: App {
         MenuBarExtra {
             EmptyView()
         } label: {
-            HStack(spacing: 2) {
-                Text("\(Int(wpmManager.currentWPM))")
-                    .font(.system(.body, design: .monospaced))
-                    .fontWeight(.medium)
-                Text("WPM")
-                    .font(.system(.caption, design: .monospaced))
-                    .foregroundColor(.secondary)
-            }
+            Text("\(Int(wpmManager.currentWPM)) WPM")
+                .font(.system(size: 13, weight: .medium, design: .monospaced))
         }
     }
 }

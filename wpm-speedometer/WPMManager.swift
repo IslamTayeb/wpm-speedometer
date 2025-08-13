@@ -19,10 +19,11 @@ class WPMManager: ObservableObject {
     @Published var currentWPM: Double = 0
     @Published var isMonitoring: Bool = false
 
-    // MonkeyType algorithm variables
-    private var currentKeypressCount: Int = 0
+    // High-frequency rolling window variables
+    private var keystrokeTimestamps: [CFAbsoluteTime] = []
     private var timer: Timer?
-    private let intervalMs: TimeInterval = 1.0 // 1 second intervals
+    private let updateInterval: TimeInterval = 0.02 // 50 times per second (20ms)
+    private let rollingWindowDuration: TimeInterval = 2.0 // 2 second rolling window
 
     // System monitoring
     private var eventTap: CFMachPort?
@@ -71,19 +72,20 @@ class WPMManager: ObservableObject {
         }
     }
 
-    func stopMonitoring() {
+        func stopMonitoring() {
         guard isMonitoring else { return }
 
         teardownEventTap()
         stopTimer()
         isMonitoring = false
         currentWPM = 0
+        keystrokeTimestamps.removeAll()
         print("WPM monitoring stopped")
     }
 
-    private func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: intervalMs, repeats: true) { [weak self] _ in
-            self?.calculateWPM()
+        private func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: updateInterval, repeats: true) { [weak self] _ in
+            self?.calculateRollingWPM()
         }
 
         if let timer = timer {
@@ -96,22 +98,41 @@ class WPMManager: ObservableObject {
         timer = nil
     }
 
-    /// MonkeyType's exact per-second Raw WPM calculation
-    private func calculateWPM() {
-        // Raw WPM = (keypresses_in_second ÷ 5) × 60
-        let rawWPM = Double((currentKeypressCount * 60) / 5)
+        /// High-frequency rolling window WPM calculation (100 updates per second)
+    private func calculateRollingWPM() {
+        let now = CFAbsoluteTimeGetCurrent()
+        let windowStart = now - rollingWindowDuration
+
+        // Remove timestamps outside the 1-second rolling window
+        keystrokeTimestamps = keystrokeTimestamps.filter { $0 >= windowStart }
+
+        // Calculate WPM based on keystrokes in the rolling window
+        let keystrokesInWindow = keystrokeTimestamps.count
+        let words = Double(keystrokesInWindow) / 5.0 // 5 characters = 1 word
+        let minutes = rollingWindowDuration / 60.0 // Convert 1 second to minutes
+        let rawWPM = words / minutes
+
+        // Update published property
         currentWPM = rawWPM
 
-        // Reset counter for next second
-        currentKeypressCount = 0
-
-        print("WPM: \(Int(rawWPM))")
+        // Optional: Less frequent console output to avoid spam
+        if Int(now * 10) % 10 == 0 { // Print every 100ms instead of every 10ms
+            print("WPM: \(Int(rawWPM)) (from \(keystrokesInWindow) keystrokes)")
+        }
     }
 
     /// Core input method - call this on every keystroke
     private func onKeystroke() {
         guard isMonitoring else { return }
-        currentKeypressCount += 1
+
+        let now = CFAbsoluteTimeGetCurrent()
+        keystrokeTimestamps.append(now)
+
+        // Memory optimization: Keep only recent timestamps (shouldn't be needed due to filtering, but safety)
+        let maxTimestamps = 1000 // Theoretical max: 250 WPM = ~21 keystrokes/second = ~21 timestamps
+        if keystrokeTimestamps.count > maxTimestamps {
+            keystrokeTimestamps.removeFirst(keystrokeTimestamps.count - maxTimestamps)
+        }
     }
 
     // MARK: - Event Handling
@@ -153,7 +174,7 @@ class WPMManager: ObservableObject {
         }
     }
 
-    private func handleKeyEvent(_ event: CGEvent) -> Unmanaged<CGEvent>? {
+        private func handleKeyEvent(_ event: CGEvent) -> Unmanaged<CGEvent>? {
         let keyCode = UInt16(event.getIntegerValueField(.keyboardEventKeycode))
 
         // Fast lookup for typing keys only
@@ -161,7 +182,17 @@ class WPMManager: ObservableObject {
             return Unmanaged.passRetained(event)
         }
 
-        // Count this keystroke
+        // Check for modifier keys - exclude keyboard shortcuts
+        let flags = event.flags
+
+        // Exclude if Command (⌘), Control (⌃), or Option (⌥) is pressed
+        if flags.contains(.maskCommand) ||
+           flags.contains(.maskControl) ||
+           flags.contains(.maskAlternate) {
+            return Unmanaged.passRetained(event) // Don't count keyboard shortcuts
+        }
+
+        // Count this keystroke only if no modifiers are pressed
         onKeystroke()
 
         return Unmanaged.passRetained(event)
